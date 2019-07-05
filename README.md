@@ -53,7 +53,7 @@ curl http://localhost:8080/api/v1/orders/
  # Build the docker image 
  docker build -t spring-boot-app .
  # Run the docker container and put the port as specified in the .env file
- docker run -d -p 8080:8080 --name spring-boot-app -e PORT=9000 spring-boot-app 
+ docker run -d -p 8080:8080 --name spring-boot-app spring-boot-app 
  # Check the logs
  docker logs -f spring-boot-app 
  # Cleaup the container
